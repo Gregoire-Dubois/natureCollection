@@ -11,7 +11,6 @@ import fr.dubois.naturecollection2.adapter.PlantAdapter
 
 class HomeFragement : Fragment(){
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -22,7 +21,6 @@ class HomeFragement : Fragment(){
         val view = inflater?.inflate(R.layout.fragment_home, container, false)
         val horizontalRecyclerView = view?.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
         horizontalRecyclerView?.adapter = PlantAdapter()
-
 
         return view
     }
